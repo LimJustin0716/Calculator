@@ -108,5 +108,53 @@ namespace Calculator
             results = Double.Parse(displaybox.Text);
             lblShowOperation.Text = "";
         }
+
+        private void sin_click(object sender, EventArgs e)
+        {
+            double sineTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("sin" + "(" + (displaybox.Text) + ")");
+            sineTrigo = Math.Sin(sineTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(sineTrigo);
+        }
+
+        private void cos_click(object sender, EventArgs e)
+        {
+            double cosineTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("cos" + "(" + (displaybox.Text) + ")");
+            cosineTrigo = Math.Cos(cosineTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(cosineTrigo);
+        }
+
+        private void tan_click(object sender, EventArgs e)
+        {
+            double tanTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+            tanTrigo = Math.Tan(tanTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(tanTrigo);
+        }
+
+        private void sinh_click(object sender, EventArgs e)
+        {
+            double sinhTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("sinh" + "(" + (displaybox.Text) + ")");
+            sinhTrigo = Math.Sinh(sinhTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(sinhTrigo);
+        }
+
+        private void cosh_click(object sender, EventArgs e)
+        {
+            double coshTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("cosh" + "(" + (displaybox.Text) + ")");
+            coshTrigo = Math.Tan(coshTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(coshTrigo);
+        }
+
+        private void tanh_click(object sender, EventArgs e)
+        {
+            double tanhTrigo = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("tanh" + "(" + (displaybox.Text) + ")");
+            tanhTrigo = Math.Tan(tanhTrigo * Math.PI / 180);
+            displaybox.Text = System.Convert.ToString(tanhTrigo);
+        }
     }
 }
