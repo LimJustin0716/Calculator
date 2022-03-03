@@ -156,5 +156,21 @@ namespace Calculator
             tanhTrigo = Math.Tan(tanhTrigo * Math.PI / 180);
             displaybox.Text = System.Convert.ToString(tanhTrigo);
         }
+
+        private void log_click(object sender, EventArgs e)
+        {
+            double logFunction = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("log" + "(" + (displaybox.Text) + ")");
+            logFunction = Math.Log10(logFunction);
+            displaybox.Text = System.Convert.ToString(logFunction);
+        }
+
+        private void root_sym_click(object sender, EventArgs e)
+        {
+            double squareRoot = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("√" + "(" + (displaybox.Text) + ")");
+            squareRoot = Math.Sqrt(squareRoot);
+            displaybox.Text = System.Convert.ToString(squareRoot);
+        }
     }
 }

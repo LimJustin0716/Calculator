@@ -224,6 +224,7 @@ namespace Calculator
             this.rootsymbol.TabIndex = 10;
             this.rootsymbol.Text = "√";
             this.rootsymbol.UseVisualStyleBackColor = true;
+            this.rootsymbol.Click += new System.EventHandler(this.root_sym_click);
             // 
             // num7
             // 
@@ -667,6 +668,7 @@ namespace Calculator
             this.logarithm.TabIndex = 55;
             this.logarithm.Text = "Log";
             this.logarithm.UseVisualStyleBackColor = true;
+            this.logarithm.Click += new System.EventHandler(this.log_click);
             // 
             // ten_raised_to_x
             // 
