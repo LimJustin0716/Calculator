@@ -512,6 +512,7 @@ namespace Calculator
             this.squared_value.TabIndex = 40;
             this.squared_value.Text = "x²";
             this.squared_value.UseVisualStyleBackColor = true;
+            this.squared_value.Click += new System.EventHandler(this.squared_click);
             // 
             // factorial_func
             // 
@@ -616,6 +617,7 @@ namespace Calculator
             this.cubed_value.TabIndex = 50;
             this.cubed_value.Text = "x³";
             this.cubed_value.UseVisualStyleBackColor = true;
+            this.cubed_value.Click += new System.EventHandler(this.cubed_click);
             // 
             // square_root
             // 

@@ -111,26 +111,75 @@ namespace Calculator
 
         private void sin_click(object sender, EventArgs e)
         {
-            double sineTrigo = Double.Parse(displaybox.Text);
-            lblShowOperation.Text = System.Convert.ToString("sin" + "(" + (displaybox.Text) + ")");
-            sineTrigo = Math.Sin(sineTrigo * Math.PI / 180);
-            displaybox.Text = System.Convert.ToString(sineTrigo);
+            if (displaybox.Text == "180")
+            {
+                lblShowOperation.Text = System.Convert.ToString("sin" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else if (displaybox.Text == "360")
+            {
+                lblShowOperation.Text = System.Convert.ToString("sin" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else
+            {
+                double sineTrigo = Double.Parse(displaybox.Text);
+                lblShowOperation.Text = System.Convert.ToString("sin" + "(" + (displaybox.Text) + ")");
+                sineTrigo = Math.Sin(sineTrigo * Math.PI / 180);
+                displaybox.Text = System.Convert.ToString(sineTrigo);
+            }
         }
 
         private void cos_click(object sender, EventArgs e)
         {
-            double cosineTrigo = Double.Parse(displaybox.Text);
-            lblShowOperation.Text = System.Convert.ToString("cos" + "(" + (displaybox.Text) + ")");
-            cosineTrigo = Math.Cos(cosineTrigo * Math.PI / 180);
-            displaybox.Text = System.Convert.ToString(cosineTrigo);
+            if (displaybox.Text == "90")
+            {
+                lblShowOperation.Text = System.Convert.ToString("cos" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else if (displaybox.Text == "270")
+            {
+                lblShowOperation.Text = System.Convert.ToString("cos" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else
+            {
+                double cosineTrigo = Double.Parse(displaybox.Text);
+                lblShowOperation.Text = System.Convert.ToString("cos" + "(" + (displaybox.Text) + ")");
+                cosineTrigo = Math.Cos(cosineTrigo * Math.PI / 180);
+                displaybox.Text = System.Convert.ToString(cosineTrigo);
+            }
         }
 
         private void tan_click(object sender, EventArgs e)
         {
-            double tanTrigo = Double.Parse(displaybox.Text);
-            lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
-            tanTrigo = Math.Tan(tanTrigo * Math.PI / 180);
-            displaybox.Text = System.Convert.ToString(tanTrigo);
+            if (displaybox.Text == "90")
+            {
+                lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = Double.PositiveInfinity.ToString();
+            }
+            else if (displaybox.Text == "270")
+            {
+                lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = Double.PositiveInfinity.ToString();
+            }
+            else if (displaybox.Text == "180")
+            {
+                lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else if (displaybox.Text == "360")
+            {
+                lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+                displaybox.Text = "0";
+            }
+            else
+            {
+                double tanTrigo = Double.Parse(displaybox.Text);
+                lblShowOperation.Text = System.Convert.ToString("tan" + "(" + (displaybox.Text) + ")");
+                tanTrigo = Math.Tan(tanTrigo * Math.PI / 180);
+                displaybox.Text = System.Convert.ToString(tanTrigo);
+            }
         }
 
         private void sinh_click(object sender, EventArgs e)
@@ -171,6 +220,20 @@ namespace Calculator
             lblShowOperation.Text = System.Convert.ToString("√" + "(" + (displaybox.Text) + ")");
             squareRoot = Math.Sqrt(squareRoot);
             displaybox.Text = System.Convert.ToString(squareRoot);
+        }
+
+        private void squared_click(object sender, EventArgs e)
+        {
+            double squarenum;
+            squarenum = Convert.ToDouble(displaybox.Text) * Convert.ToDouble(displaybox.Text);
+            displaybox.Text = System.Convert.ToString(squarenum);
+        }
+
+        private void cubed_click(object sender, EventArgs e)
+        {
+            double cubenum;
+            cubenum = Convert.ToDouble(displaybox.Text) * Convert.ToDouble(displaybox.Text) * Convert.ToDouble(displaybox.Text);
+            displaybox.Text = System.Convert.ToString(cubenum);
         }
     }
 }
