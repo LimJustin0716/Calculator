@@ -235,5 +235,113 @@ namespace Calculator
             cubenum = Convert.ToDouble(displaybox.Text) * Convert.ToDouble(displaybox.Text) * Convert.ToDouble(displaybox.Text);
             displaybox.Text = System.Convert.ToString(cubenum);
         }
+
+        private void factorial_click(object sender, EventArgs e)
+        {
+            double fact_num;
+            int factor = 1;
+            fact_num = Convert.ToDouble(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString((displaybox.Text) + "!");
+            if (fact_num < 0)
+            {
+                displaybox.Text = System.Convert.ToString("Error");
+            }
+            else if (fact_num <= 1)
+            {
+                displaybox.Text = System.Convert.ToString("1");
+            }
+            else
+            {
+                for (int i = 1; i <= fact_num; i++)
+                {
+                    factor = factor * i;
+                    displaybox.Text = System.Convert.ToString(factor);
+                }
+            }
+        }
+
+        private void ln_click(object sender, EventArgs e)
+        {
+            double ln_num = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("ln" + "(" + (displaybox.Text) + ")");
+            results = Math.Log(ln_num);
+            displaybox.Text = results.ToString();
+        }
+
+        private void reciprocal_click(object sender, EventArgs e)
+        {
+            double reciprocal_num;
+            lblShowOperation.Text = System.Convert.ToString("1/" + "(" + (displaybox.Text) + ")");
+            reciprocal_num = Convert.ToDouble(1.0 / Convert.ToDouble(displaybox.Text));
+            displaybox.Text = System.Convert.ToString(reciprocal_num);
+        }
+
+        private void square_root_click(object sender, EventArgs e)
+        {
+            double sqr_num = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("sqrt" + "(" + (displaybox.Text) + ")");
+            sqr_num = Math.Sqrt(sqr_num);
+            displaybox.Text = System.Convert.ToString(sqr_num);
+        }
+
+        private void cube_root_click(object sender, EventArgs e)
+        {
+            double cbroot_num = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString("cuberoot" + "(" + (displaybox.Text) + ")");
+            cbroot_num = (Math.Pow(cbroot_num, (double)1.0 / 3.0));
+            displaybox.Text = System.Convert.ToString(cbroot_num);
+        }
+
+        private void plus_minus_click(object sender, EventArgs e)
+        {
+            double num;
+            num = -1 * Convert.ToDouble(displaybox.Text);
+            displaybox.Text = System.Convert.ToString(num);
+        }
+
+        private void ten_raised_to_x_Click(object sender, EventArgs e)
+        {
+            double ten_raised_to_num;
+            lblShowOperation.Text = System.Convert.ToString("10^" + "(" + (displaybox.Text) + ")");
+            ten_raised_to_num = Math.Pow(10, Convert.ToDouble(displaybox.Text));
+            displaybox.Text = System.Convert.ToString(ten_raised_to_num);
+        }
+
+        private void pi_Click(object sender, EventArgs e)
+        {
+            displaybox.Text = "3.14159265359";
+        }
+
+        private void factorial_Click(object sender, EventArgs e)
+        {
+            double fact_num;
+            int factor = 1;
+            fact_num = Convert.ToDouble(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString((displaybox.Text) + "!");
+            if (fact_num < 0)
+            {
+                displaybox.Text = System.Convert.ToString("Error");
+            }
+            else if (fact_num <= 1)
+            {
+                displaybox.Text = System.Convert.ToString("1");
+            }
+            else
+            {
+                for (int i = 1; i <= fact_num; i++)
+                {
+                    factor = factor * i;
+                    displaybox.Text = System.Convert.ToString(factor);
+                }
+            }
+        }
+
+        private void percent_sym_Click(object sender, EventArgs e)
+        {
+            double percent_num = Double.Parse(displaybox.Text);
+            lblShowOperation.Text = System.Convert.ToString((displaybox.Text) + "%");
+            percent_num = Convert.ToDouble(0.01 * Convert.ToDouble(displaybox.Text));
+            displaybox.Text = System.Convert.ToString(percent_num);
+        }
     }
 }

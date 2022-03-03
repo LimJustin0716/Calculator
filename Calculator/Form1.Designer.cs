@@ -29,12 +29,7 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.mem_clear = new System.Windows.Forms.Button();
             this.displaybox = new System.Windows.Forms.TextBox();
-            this.mem_recall = new System.Windows.Forms.Button();
-            this.mem_store = new System.Windows.Forms.Button();
-            this.mem_add = new System.Windows.Forms.Button();
-            this.mem_minus = new System.Windows.Forms.Button();
             this.backbtn = new System.Windows.Forms.Button();
             this.clear_entry = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
@@ -58,27 +53,18 @@ namespace Calculator
             this.num0 = new System.Windows.Forms.Button();
             this.dot_sym = new System.Windows.Forms.Button();
             this.addition_sym = new System.Windows.Forms.Button();
-            this.blank = new System.Windows.Forms.Button();
-            this.inversebtn = new System.Windows.Forms.Button();
             this.natural_log = new System.Windows.Forms.Button();
-            this.open_parenthesis = new System.Windows.Forms.Button();
-            this.close_parenthesis = new System.Windows.Forms.Button();
-            this.Int_func = new System.Windows.Forms.Button();
             this.hyperbolic_sine = new System.Windows.Forms.Button();
             this.sine = new System.Windows.Forms.Button();
             this.squared_value = new System.Windows.Forms.Button();
             this.factorial_func = new System.Windows.Forms.Button();
-            this.degrees_minutes_seconds = new System.Windows.Forms.Button();
             this.hyperbolic_cos = new System.Windows.Forms.Button();
             this.cosine = new System.Windows.Forms.Button();
-            this.x_raise_y = new System.Windows.Forms.Button();
             this.cube_root = new System.Windows.Forms.Button();
-            this.pi_sym = new System.Windows.Forms.Button();
             this.hyperbolic_tan = new System.Windows.Forms.Button();
             this.tangent = new System.Windows.Forms.Button();
             this.cubed_value = new System.Windows.Forms.Button();
             this.square_root = new System.Windows.Forms.Button();
-            this.fixed_to_exponent = new System.Windows.Forms.Button();
             this.exponential = new System.Windows.Forms.Button();
             this.modulus = new System.Windows.Forms.Button();
             this.logarithm = new System.Windows.Forms.Button();
@@ -108,18 +94,9 @@ namespace Calculator
             this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.lblShowOperation = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pi_sym = new System.Windows.Forms.Button();
             this.CalcuMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mem_clear
-            // 
-            this.mem_clear.Location = new System.Drawing.Point(303, 133);
-            this.mem_clear.Margin = new System.Windows.Forms.Padding(4);
-            this.mem_clear.Name = "mem_clear";
-            this.mem_clear.Size = new System.Drawing.Size(59, 44);
-            this.mem_clear.TabIndex = 0;
-            this.mem_clear.Text = "MC";
-            this.mem_clear.UseVisualStyleBackColor = true;
             // 
             // displaybox
             // 
@@ -127,54 +104,14 @@ namespace Calculator
             this.displaybox.Location = new System.Drawing.Point(16, 65);
             this.displaybox.Margin = new System.Windows.Forms.Padding(4);
             this.displaybox.Name = "displaybox";
-            this.displaybox.Size = new System.Drawing.Size(573, 53);
+            this.displaybox.Size = new System.Drawing.Size(518, 53);
             this.displaybox.TabIndex = 1;
             this.displaybox.Text = "0";
             this.displaybox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // mem_recall
-            // 
-            this.mem_recall.Location = new System.Drawing.Point(360, 133);
-            this.mem_recall.Margin = new System.Windows.Forms.Padding(4);
-            this.mem_recall.Name = "mem_recall";
-            this.mem_recall.Size = new System.Drawing.Size(59, 44);
-            this.mem_recall.TabIndex = 2;
-            this.mem_recall.Text = "MR";
-            this.mem_recall.UseVisualStyleBackColor = true;
-            // 
-            // mem_store
-            // 
-            this.mem_store.Location = new System.Drawing.Point(417, 133);
-            this.mem_store.Margin = new System.Windows.Forms.Padding(4);
-            this.mem_store.Name = "mem_store";
-            this.mem_store.Size = new System.Drawing.Size(59, 44);
-            this.mem_store.TabIndex = 3;
-            this.mem_store.Text = "MS";
-            this.mem_store.UseVisualStyleBackColor = true;
-            // 
-            // mem_add
-            // 
-            this.mem_add.Location = new System.Drawing.Point(475, 133);
-            this.mem_add.Margin = new System.Windows.Forms.Padding(4);
-            this.mem_add.Name = "mem_add";
-            this.mem_add.Size = new System.Drawing.Size(59, 44);
-            this.mem_add.TabIndex = 4;
-            this.mem_add.Text = "M+";
-            this.mem_add.UseVisualStyleBackColor = true;
-            // 
-            // mem_minus
-            // 
-            this.mem_minus.Location = new System.Drawing.Point(532, 133);
-            this.mem_minus.Margin = new System.Windows.Forms.Padding(4);
-            this.mem_minus.Name = "mem_minus";
-            this.mem_minus.Size = new System.Drawing.Size(59, 44);
-            this.mem_minus.TabIndex = 5;
-            this.mem_minus.Text = "M-";
-            this.mem_minus.UseVisualStyleBackColor = true;
-            // 
             // backbtn
             // 
-            this.backbtn.Location = new System.Drawing.Point(303, 176);
+            this.backbtn.Location = new System.Drawing.Point(246, 129);
             this.backbtn.Margin = new System.Windows.Forms.Padding(4);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(59, 44);
@@ -185,7 +122,7 @@ namespace Calculator
             // 
             // clear_entry
             // 
-            this.clear_entry.Location = new System.Drawing.Point(360, 176);
+            this.clear_entry.Location = new System.Drawing.Point(303, 129);
             this.clear_entry.Margin = new System.Windows.Forms.Padding(4);
             this.clear_entry.Name = "clear_entry";
             this.clear_entry.Size = new System.Drawing.Size(59, 44);
@@ -196,7 +133,7 @@ namespace Calculator
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(417, 176);
+            this.clear.Location = new System.Drawing.Point(360, 129);
             this.clear.Margin = new System.Windows.Forms.Padding(4);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(59, 44);
@@ -207,17 +144,18 @@ namespace Calculator
             // 
             // plus_minus
             // 
-            this.plus_minus.Location = new System.Drawing.Point(475, 176);
+            this.plus_minus.Location = new System.Drawing.Point(418, 129);
             this.plus_minus.Margin = new System.Windows.Forms.Padding(4);
             this.plus_minus.Name = "plus_minus";
             this.plus_minus.Size = new System.Drawing.Size(59, 44);
             this.plus_minus.TabIndex = 9;
             this.plus_minus.Text = "±";
             this.plus_minus.UseVisualStyleBackColor = true;
+            this.plus_minus.Click += new System.EventHandler(this.plus_minus_click);
             // 
             // rootsymbol
             // 
-            this.rootsymbol.Location = new System.Drawing.Point(532, 176);
+            this.rootsymbol.Location = new System.Drawing.Point(475, 129);
             this.rootsymbol.Margin = new System.Windows.Forms.Padding(4);
             this.rootsymbol.Name = "rootsymbol";
             this.rootsymbol.Size = new System.Drawing.Size(59, 44);
@@ -228,7 +166,7 @@ namespace Calculator
             // 
             // num7
             // 
-            this.num7.Location = new System.Drawing.Point(303, 219);
+            this.num7.Location = new System.Drawing.Point(246, 172);
             this.num7.Margin = new System.Windows.Forms.Padding(4);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(59, 44);
@@ -239,7 +177,7 @@ namespace Calculator
             // 
             // num8
             // 
-            this.num8.Location = new System.Drawing.Point(360, 219);
+            this.num8.Location = new System.Drawing.Point(303, 172);
             this.num8.Margin = new System.Windows.Forms.Padding(4);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(59, 44);
@@ -250,7 +188,7 @@ namespace Calculator
             // 
             // num9
             // 
-            this.num9.Location = new System.Drawing.Point(417, 219);
+            this.num9.Location = new System.Drawing.Point(360, 172);
             this.num9.Margin = new System.Windows.Forms.Padding(4);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(59, 44);
@@ -261,7 +199,7 @@ namespace Calculator
             // 
             // division_sym
             // 
-            this.division_sym.Location = new System.Drawing.Point(475, 219);
+            this.division_sym.Location = new System.Drawing.Point(418, 172);
             this.division_sym.Margin = new System.Windows.Forms.Padding(4);
             this.division_sym.Name = "division_sym";
             this.division_sym.Size = new System.Drawing.Size(59, 44);
@@ -272,17 +210,18 @@ namespace Calculator
             // 
             // percent_sign
             // 
-            this.percent_sign.Location = new System.Drawing.Point(532, 219);
+            this.percent_sign.Location = new System.Drawing.Point(475, 172);
             this.percent_sign.Margin = new System.Windows.Forms.Padding(4);
             this.percent_sign.Name = "percent_sign";
             this.percent_sign.Size = new System.Drawing.Size(59, 44);
             this.percent_sign.TabIndex = 15;
             this.percent_sign.Text = "%";
             this.percent_sign.UseVisualStyleBackColor = true;
+            this.percent_sign.Click += new System.EventHandler(this.percent_sym_Click);
             // 
             // num4
             // 
-            this.num4.Location = new System.Drawing.Point(303, 262);
+            this.num4.Location = new System.Drawing.Point(246, 215);
             this.num4.Margin = new System.Windows.Forms.Padding(4);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(59, 44);
@@ -293,7 +232,7 @@ namespace Calculator
             // 
             // num5
             // 
-            this.num5.Location = new System.Drawing.Point(360, 262);
+            this.num5.Location = new System.Drawing.Point(303, 215);
             this.num5.Margin = new System.Windows.Forms.Padding(4);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(59, 44);
@@ -304,7 +243,7 @@ namespace Calculator
             // 
             // num6
             // 
-            this.num6.Location = new System.Drawing.Point(417, 262);
+            this.num6.Location = new System.Drawing.Point(360, 215);
             this.num6.Margin = new System.Windows.Forms.Padding(4);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(59, 44);
@@ -315,7 +254,7 @@ namespace Calculator
             // 
             // multiplication_sym
             // 
-            this.multiplication_sym.Location = new System.Drawing.Point(475, 262);
+            this.multiplication_sym.Location = new System.Drawing.Point(418, 215);
             this.multiplication_sym.Margin = new System.Windows.Forms.Padding(4);
             this.multiplication_sym.Name = "multiplication_sym";
             this.multiplication_sym.Size = new System.Drawing.Size(59, 44);
@@ -326,17 +265,18 @@ namespace Calculator
             // 
             // reciprocal_func
             // 
-            this.reciprocal_func.Location = new System.Drawing.Point(532, 262);
+            this.reciprocal_func.Location = new System.Drawing.Point(475, 215);
             this.reciprocal_func.Margin = new System.Windows.Forms.Padding(4);
             this.reciprocal_func.Name = "reciprocal_func";
             this.reciprocal_func.Size = new System.Drawing.Size(59, 44);
             this.reciprocal_func.TabIndex = 20;
             this.reciprocal_func.Text = "1/x";
             this.reciprocal_func.UseVisualStyleBackColor = true;
+            this.reciprocal_func.Click += new System.EventHandler(this.reciprocal_click);
             // 
             // num1
             // 
-            this.num1.Location = new System.Drawing.Point(303, 305);
+            this.num1.Location = new System.Drawing.Point(246, 258);
             this.num1.Margin = new System.Windows.Forms.Padding(4);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(59, 44);
@@ -347,7 +287,7 @@ namespace Calculator
             // 
             // num2
             // 
-            this.num2.Location = new System.Drawing.Point(360, 305);
+            this.num2.Location = new System.Drawing.Point(303, 258);
             this.num2.Margin = new System.Windows.Forms.Padding(4);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(59, 44);
@@ -358,7 +298,7 @@ namespace Calculator
             // 
             // num3
             // 
-            this.num3.Location = new System.Drawing.Point(417, 305);
+            this.num3.Location = new System.Drawing.Point(360, 258);
             this.num3.Margin = new System.Windows.Forms.Padding(4);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(59, 44);
@@ -369,7 +309,7 @@ namespace Calculator
             // 
             // subtraction_sym
             // 
-            this.subtraction_sym.Location = new System.Drawing.Point(475, 305);
+            this.subtraction_sym.Location = new System.Drawing.Point(418, 258);
             this.subtraction_sym.Margin = new System.Windows.Forms.Padding(4);
             this.subtraction_sym.Name = "subtraction_sym";
             this.subtraction_sym.Size = new System.Drawing.Size(59, 44);
@@ -380,7 +320,7 @@ namespace Calculator
             // 
             // equal_sym
             // 
-            this.equal_sym.Location = new System.Drawing.Point(532, 305);
+            this.equal_sym.Location = new System.Drawing.Point(475, 258);
             this.equal_sym.Margin = new System.Windows.Forms.Padding(4);
             this.equal_sym.Name = "equal_sym";
             this.equal_sym.Size = new System.Drawing.Size(59, 87);
@@ -391,10 +331,10 @@ namespace Calculator
             // 
             // num0
             // 
-            this.num0.Location = new System.Drawing.Point(303, 348);
+            this.num0.Location = new System.Drawing.Point(246, 301);
             this.num0.Margin = new System.Windows.Forms.Padding(4);
             this.num0.Name = "num0";
-            this.num0.Size = new System.Drawing.Size(116, 44);
+            this.num0.Size = new System.Drawing.Size(59, 44);
             this.num0.TabIndex = 26;
             this.num0.Text = "0";
             this.num0.UseVisualStyleBackColor = true;
@@ -402,7 +342,7 @@ namespace Calculator
             // 
             // dot_sym
             // 
-            this.dot_sym.Location = new System.Drawing.Point(417, 348);
+            this.dot_sym.Location = new System.Drawing.Point(360, 301);
             this.dot_sym.Margin = new System.Windows.Forms.Padding(4);
             this.dot_sym.Name = "dot_sym";
             this.dot_sym.Size = new System.Drawing.Size(59, 44);
@@ -413,7 +353,7 @@ namespace Calculator
             // 
             // addition_sym
             // 
-            this.addition_sym.Location = new System.Drawing.Point(475, 348);
+            this.addition_sym.Location = new System.Drawing.Point(418, 301);
             this.addition_sym.Margin = new System.Windows.Forms.Padding(4);
             this.addition_sym.Name = "addition_sym";
             this.addition_sym.Size = new System.Drawing.Size(59, 44);
@@ -422,68 +362,20 @@ namespace Calculator
             this.addition_sym.UseVisualStyleBackColor = true;
             this.addition_sym.Click += new System.EventHandler(this.Arithmetic_exp_mod);
             // 
-            // blank
-            // 
-            this.blank.Location = new System.Drawing.Point(16, 176);
-            this.blank.Margin = new System.Windows.Forms.Padding(4);
-            this.blank.Name = "blank";
-            this.blank.Size = new System.Drawing.Size(59, 44);
-            this.blank.TabIndex = 32;
-            this.blank.UseVisualStyleBackColor = true;
-            // 
-            // inversebtn
-            // 
-            this.inversebtn.Location = new System.Drawing.Point(73, 176);
-            this.inversebtn.Margin = new System.Windows.Forms.Padding(4);
-            this.inversebtn.Name = "inversebtn";
-            this.inversebtn.Size = new System.Drawing.Size(59, 44);
-            this.inversebtn.TabIndex = 33;
-            this.inversebtn.Text = "Inv";
-            this.inversebtn.UseVisualStyleBackColor = true;
-            // 
             // natural_log
             // 
-            this.natural_log.Location = new System.Drawing.Point(131, 176);
+            this.natural_log.Location = new System.Drawing.Point(131, 215);
             this.natural_log.Margin = new System.Windows.Forms.Padding(4);
             this.natural_log.Name = "natural_log";
             this.natural_log.Size = new System.Drawing.Size(59, 44);
             this.natural_log.TabIndex = 34;
             this.natural_log.Text = "ln";
             this.natural_log.UseVisualStyleBackColor = true;
-            // 
-            // open_parenthesis
-            // 
-            this.open_parenthesis.Location = new System.Drawing.Point(188, 176);
-            this.open_parenthesis.Margin = new System.Windows.Forms.Padding(4);
-            this.open_parenthesis.Name = "open_parenthesis";
-            this.open_parenthesis.Size = new System.Drawing.Size(59, 44);
-            this.open_parenthesis.TabIndex = 35;
-            this.open_parenthesis.Text = "(";
-            this.open_parenthesis.UseVisualStyleBackColor = true;
-            // 
-            // close_parenthesis
-            // 
-            this.close_parenthesis.Location = new System.Drawing.Point(245, 176);
-            this.close_parenthesis.Margin = new System.Windows.Forms.Padding(4);
-            this.close_parenthesis.Name = "close_parenthesis";
-            this.close_parenthesis.Size = new System.Drawing.Size(59, 44);
-            this.close_parenthesis.TabIndex = 36;
-            this.close_parenthesis.Text = ")";
-            this.close_parenthesis.UseVisualStyleBackColor = true;
-            // 
-            // Int_func
-            // 
-            this.Int_func.Location = new System.Drawing.Point(16, 219);
-            this.Int_func.Margin = new System.Windows.Forms.Padding(4);
-            this.Int_func.Name = "Int_func";
-            this.Int_func.Size = new System.Drawing.Size(59, 44);
-            this.Int_func.TabIndex = 37;
-            this.Int_func.Text = "Int";
-            this.Int_func.UseVisualStyleBackColor = true;
+            this.natural_log.Click += new System.EventHandler(this.ln_click);
             // 
             // hyperbolic_sine
             // 
-            this.hyperbolic_sine.Location = new System.Drawing.Point(73, 219);
+            this.hyperbolic_sine.Location = new System.Drawing.Point(16, 172);
             this.hyperbolic_sine.Margin = new System.Windows.Forms.Padding(4);
             this.hyperbolic_sine.Name = "hyperbolic_sine";
             this.hyperbolic_sine.Size = new System.Drawing.Size(59, 44);
@@ -494,7 +386,7 @@ namespace Calculator
             // 
             // sine
             // 
-            this.sine.Location = new System.Drawing.Point(131, 219);
+            this.sine.Location = new System.Drawing.Point(74, 172);
             this.sine.Margin = new System.Windows.Forms.Padding(4);
             this.sine.Name = "sine";
             this.sine.Size = new System.Drawing.Size(59, 44);
@@ -505,7 +397,7 @@ namespace Calculator
             // 
             // squared_value
             // 
-            this.squared_value.Location = new System.Drawing.Point(188, 219);
+            this.squared_value.Location = new System.Drawing.Point(131, 172);
             this.squared_value.Margin = new System.Windows.Forms.Padding(4);
             this.squared_value.Name = "squared_value";
             this.squared_value.Size = new System.Drawing.Size(59, 44);
@@ -516,27 +408,18 @@ namespace Calculator
             // 
             // factorial_func
             // 
-            this.factorial_func.Location = new System.Drawing.Point(245, 219);
+            this.factorial_func.Location = new System.Drawing.Point(188, 172);
             this.factorial_func.Margin = new System.Windows.Forms.Padding(4);
             this.factorial_func.Name = "factorial_func";
             this.factorial_func.Size = new System.Drawing.Size(59, 44);
             this.factorial_func.TabIndex = 41;
             this.factorial_func.Text = "n!";
             this.factorial_func.UseVisualStyleBackColor = true;
-            // 
-            // degrees_minutes_seconds
-            // 
-            this.degrees_minutes_seconds.Location = new System.Drawing.Point(16, 262);
-            this.degrees_minutes_seconds.Margin = new System.Windows.Forms.Padding(4);
-            this.degrees_minutes_seconds.Name = "degrees_minutes_seconds";
-            this.degrees_minutes_seconds.Size = new System.Drawing.Size(59, 44);
-            this.degrees_minutes_seconds.TabIndex = 42;
-            this.degrees_minutes_seconds.Text = "dms";
-            this.degrees_minutes_seconds.UseVisualStyleBackColor = true;
+            this.factorial_func.Click += new System.EventHandler(this.factorial_Click);
             // 
             // hyperbolic_cos
             // 
-            this.hyperbolic_cos.Location = new System.Drawing.Point(73, 262);
+            this.hyperbolic_cos.Location = new System.Drawing.Point(16, 215);
             this.hyperbolic_cos.Margin = new System.Windows.Forms.Padding(4);
             this.hyperbolic_cos.Name = "hyperbolic_cos";
             this.hyperbolic_cos.Size = new System.Drawing.Size(59, 44);
@@ -547,7 +430,7 @@ namespace Calculator
             // 
             // cosine
             // 
-            this.cosine.Location = new System.Drawing.Point(131, 262);
+            this.cosine.Location = new System.Drawing.Point(74, 215);
             this.cosine.Margin = new System.Windows.Forms.Padding(4);
             this.cosine.Name = "cosine";
             this.cosine.Size = new System.Drawing.Size(59, 44);
@@ -556,39 +439,20 @@ namespace Calculator
             this.cosine.UseVisualStyleBackColor = true;
             this.cosine.Click += new System.EventHandler(this.cos_click);
             // 
-            // x_raise_y
-            // 
-            this.x_raise_y.Location = new System.Drawing.Point(188, 262);
-            this.x_raise_y.Margin = new System.Windows.Forms.Padding(4);
-            this.x_raise_y.Name = "x_raise_y";
-            this.x_raise_y.Size = new System.Drawing.Size(59, 44);
-            this.x_raise_y.TabIndex = 45;
-            this.x_raise_y.Text = "x^y";
-            this.x_raise_y.UseVisualStyleBackColor = true;
-            // 
             // cube_root
             // 
-            this.cube_root.Location = new System.Drawing.Point(245, 262);
+            this.cube_root.Location = new System.Drawing.Point(188, 215);
             this.cube_root.Margin = new System.Windows.Forms.Padding(4);
             this.cube_root.Name = "cube_root";
             this.cube_root.Size = new System.Drawing.Size(59, 44);
             this.cube_root.TabIndex = 46;
             this.cube_root.Text = "³√x";
             this.cube_root.UseVisualStyleBackColor = true;
-            // 
-            // pi_sym
-            // 
-            this.pi_sym.Location = new System.Drawing.Point(16, 305);
-            this.pi_sym.Margin = new System.Windows.Forms.Padding(4);
-            this.pi_sym.Name = "pi_sym";
-            this.pi_sym.Size = new System.Drawing.Size(59, 44);
-            this.pi_sym.TabIndex = 47;
-            this.pi_sym.Text = "π";
-            this.pi_sym.UseVisualStyleBackColor = true;
+            this.cube_root.Click += new System.EventHandler(this.cube_root_click);
             // 
             // hyperbolic_tan
             // 
-            this.hyperbolic_tan.Location = new System.Drawing.Point(73, 305);
+            this.hyperbolic_tan.Location = new System.Drawing.Point(16, 258);
             this.hyperbolic_tan.Margin = new System.Windows.Forms.Padding(4);
             this.hyperbolic_tan.Name = "hyperbolic_tan";
             this.hyperbolic_tan.Size = new System.Drawing.Size(59, 44);
@@ -599,7 +463,7 @@ namespace Calculator
             // 
             // tangent
             // 
-            this.tangent.Location = new System.Drawing.Point(131, 305);
+            this.tangent.Location = new System.Drawing.Point(74, 258);
             this.tangent.Margin = new System.Windows.Forms.Padding(4);
             this.tangent.Name = "tangent";
             this.tangent.Size = new System.Drawing.Size(59, 44);
@@ -610,7 +474,7 @@ namespace Calculator
             // 
             // cubed_value
             // 
-            this.cubed_value.Location = new System.Drawing.Point(188, 305);
+            this.cubed_value.Location = new System.Drawing.Point(131, 258);
             this.cubed_value.Margin = new System.Windows.Forms.Padding(4);
             this.cubed_value.Name = "cubed_value";
             this.cubed_value.Size = new System.Drawing.Size(59, 44);
@@ -621,27 +485,18 @@ namespace Calculator
             // 
             // square_root
             // 
-            this.square_root.Location = new System.Drawing.Point(245, 305);
+            this.square_root.Location = new System.Drawing.Point(188, 258);
             this.square_root.Margin = new System.Windows.Forms.Padding(4);
             this.square_root.Name = "square_root";
             this.square_root.Size = new System.Drawing.Size(59, 44);
             this.square_root.TabIndex = 51;
             this.square_root.Text = "²√x";
             this.square_root.UseVisualStyleBackColor = true;
-            // 
-            // fixed_to_exponent
-            // 
-            this.fixed_to_exponent.Location = new System.Drawing.Point(16, 348);
-            this.fixed_to_exponent.Margin = new System.Windows.Forms.Padding(4);
-            this.fixed_to_exponent.Name = "fixed_to_exponent";
-            this.fixed_to_exponent.Size = new System.Drawing.Size(59, 44);
-            this.fixed_to_exponent.TabIndex = 52;
-            this.fixed_to_exponent.Text = "F-E";
-            this.fixed_to_exponent.UseVisualStyleBackColor = true;
+            this.square_root.Click += new System.EventHandler(this.square_root_click);
             // 
             // exponential
             // 
-            this.exponential.Location = new System.Drawing.Point(73, 348);
+            this.exponential.Location = new System.Drawing.Point(16, 301);
             this.exponential.Margin = new System.Windows.Forms.Padding(4);
             this.exponential.Name = "exponential";
             this.exponential.Size = new System.Drawing.Size(59, 44);
@@ -652,7 +507,7 @@ namespace Calculator
             // 
             // modulus
             // 
-            this.modulus.Location = new System.Drawing.Point(131, 348);
+            this.modulus.Location = new System.Drawing.Point(74, 301);
             this.modulus.Margin = new System.Windows.Forms.Padding(4);
             this.modulus.Name = "modulus";
             this.modulus.Size = new System.Drawing.Size(59, 44);
@@ -663,7 +518,7 @@ namespace Calculator
             // 
             // logarithm
             // 
-            this.logarithm.Location = new System.Drawing.Point(188, 348);
+            this.logarithm.Location = new System.Drawing.Point(131, 301);
             this.logarithm.Margin = new System.Windows.Forms.Padding(4);
             this.logarithm.Name = "logarithm";
             this.logarithm.Size = new System.Drawing.Size(59, 44);
@@ -674,13 +529,14 @@ namespace Calculator
             // 
             // ten_raised_to_x
             // 
-            this.ten_raised_to_x.Location = new System.Drawing.Point(245, 348);
+            this.ten_raised_to_x.Location = new System.Drawing.Point(188, 301);
             this.ten_raised_to_x.Margin = new System.Windows.Forms.Padding(4);
             this.ten_raised_to_x.Name = "ten_raised_to_x";
             this.ten_raised_to_x.Size = new System.Drawing.Size(59, 44);
             this.ten_raised_to_x.TabIndex = 56;
             this.ten_raised_to_x.Text = "10^x";
             this.ten_raised_to_x.UseVisualStyleBackColor = true;
+            this.ten_raised_to_x.Click += new System.EventHandler(this.ten_raised_to_x_Click);
             // 
             // CalcuMenu
             // 
@@ -691,7 +547,7 @@ namespace Calculator
             this.help_menu});
             this.CalcuMenu.Location = new System.Drawing.Point(0, 0);
             this.CalcuMenu.Name = "CalcuMenu";
-            this.CalcuMenu.Size = new System.Drawing.Size(603, 28);
+            this.CalcuMenu.Size = new System.Drawing.Size(535, 28);
             this.CalcuMenu.TabIndex = 57;
             this.CalcuMenu.Text = "menuStrip1";
             // 
@@ -711,7 +567,7 @@ namespace Calculator
             this.dateCalculationToolStripMenuItem,
             this.worksheetsToolStripMenuItem});
             this.view_menu.Name = "view_menu";
-            this.view_menu.Size = new System.Drawing.Size(55, 24);
+            this.view_menu.Size = new System.Drawing.Size(55, 26);
             this.view_menu.Tag = "";
             this.view_menu.Text = "&View";
             // 
@@ -818,7 +674,7 @@ namespace Calculator
             this.copyToolStripMenuItem,
             this.pasteToolStripMenuItem});
             this.edit_menu.Name = "edit_menu";
-            this.edit_menu.Size = new System.Drawing.Size(49, 24);
+            this.edit_menu.Size = new System.Drawing.Size(49, 26);
             this.edit_menu.Text = "&Edit";
             // 
             // undoToolStripMenuItem
@@ -854,7 +710,7 @@ namespace Calculator
             this.help_menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.About});
             this.help_menu.Name = "help_menu";
-            this.help_menu.Size = new System.Drawing.Size(55, 24);
+            this.help_menu.Size = new System.Drawing.Size(55, 26);
             this.help_menu.Text = "&Help";
             // 
             // About
@@ -876,46 +732,49 @@ namespace Calculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 140);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 29);
+            this.label1.Size = new System.Drawing.Size(183, 25);
             this.label1.TabIndex = 59;
             this.label1.Text = "Scientific Calculator";
+            // 
+            // pi_sym
+            // 
+            this.pi_sym.Location = new System.Drawing.Point(303, 301);
+            this.pi_sym.Margin = new System.Windows.Forms.Padding(4);
+            this.pi_sym.Name = "pi_sym";
+            this.pi_sym.Size = new System.Drawing.Size(59, 44);
+            this.pi_sym.TabIndex = 47;
+            this.pi_sym.Text = "π";
+            this.pi_sym.UseVisualStyleBackColor = true;
+            this.pi_sym.Click += new System.EventHandler(this.pi_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(603, 401);
+            this.ClientSize = new System.Drawing.Size(535, 352);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblShowOperation);
             this.Controls.Add(this.ten_raised_to_x);
             this.Controls.Add(this.logarithm);
             this.Controls.Add(this.modulus);
             this.Controls.Add(this.exponential);
-            this.Controls.Add(this.fixed_to_exponent);
             this.Controls.Add(this.square_root);
             this.Controls.Add(this.cubed_value);
             this.Controls.Add(this.tangent);
             this.Controls.Add(this.hyperbolic_tan);
             this.Controls.Add(this.pi_sym);
             this.Controls.Add(this.cube_root);
-            this.Controls.Add(this.x_raise_y);
             this.Controls.Add(this.cosine);
             this.Controls.Add(this.hyperbolic_cos);
-            this.Controls.Add(this.degrees_minutes_seconds);
             this.Controls.Add(this.factorial_func);
             this.Controls.Add(this.squared_value);
             this.Controls.Add(this.sine);
             this.Controls.Add(this.hyperbolic_sine);
-            this.Controls.Add(this.Int_func);
-            this.Controls.Add(this.close_parenthesis);
-            this.Controls.Add(this.open_parenthesis);
             this.Controls.Add(this.natural_log);
-            this.Controls.Add(this.inversebtn);
-            this.Controls.Add(this.blank);
             this.Controls.Add(this.addition_sym);
             this.Controls.Add(this.dot_sym);
             this.Controls.Add(this.num0);
@@ -939,17 +798,12 @@ namespace Calculator
             this.Controls.Add(this.clear);
             this.Controls.Add(this.clear_entry);
             this.Controls.Add(this.backbtn);
-            this.Controls.Add(this.mem_minus);
-            this.Controls.Add(this.mem_add);
-            this.Controls.Add(this.mem_store);
-            this.Controls.Add(this.mem_recall);
             this.Controls.Add(this.displaybox);
-            this.Controls.Add(this.mem_clear);
             this.Controls.Add(this.CalcuMenu);
             this.MainMenuStrip = this.CalcuMenu;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = " ";
+            this.Text = " Calculator";
             this.CalcuMenu.ResumeLayout(false);
             this.CalcuMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -958,13 +812,7 @@ namespace Calculator
         }
 
         #endregion
-
-        private System.Windows.Forms.Button mem_clear;
         private System.Windows.Forms.TextBox displaybox;
-        private System.Windows.Forms.Button mem_recall;
-        private System.Windows.Forms.Button mem_store;
-        private System.Windows.Forms.Button mem_add;
-        private System.Windows.Forms.Button mem_minus;
         private System.Windows.Forms.Button backbtn;
         private System.Windows.Forms.Button clear_entry;
         private System.Windows.Forms.Button clear;
@@ -988,27 +836,18 @@ namespace Calculator
         private System.Windows.Forms.Button num0;
         private System.Windows.Forms.Button dot_sym;
         private System.Windows.Forms.Button addition_sym;
-        private System.Windows.Forms.Button blank;
-        private System.Windows.Forms.Button inversebtn;
         private System.Windows.Forms.Button natural_log;
-        private System.Windows.Forms.Button open_parenthesis;
-        private System.Windows.Forms.Button close_parenthesis;
-        private System.Windows.Forms.Button Int_func;
         private System.Windows.Forms.Button hyperbolic_sine;
         private System.Windows.Forms.Button sine;
         private System.Windows.Forms.Button squared_value;
         private System.Windows.Forms.Button factorial_func;
-        private System.Windows.Forms.Button degrees_minutes_seconds;
         private System.Windows.Forms.Button hyperbolic_cos;
         private System.Windows.Forms.Button cosine;
-        private System.Windows.Forms.Button x_raise_y;
         private System.Windows.Forms.Button cube_root;
-        private System.Windows.Forms.Button pi_sym;
         private System.Windows.Forms.Button hyperbolic_tan;
         private System.Windows.Forms.Button tangent;
         private System.Windows.Forms.Button cubed_value;
         private System.Windows.Forms.Button square_root;
-        private System.Windows.Forms.Button fixed_to_exponent;
         private System.Windows.Forms.Button exponential;
         private System.Windows.Forms.Button modulus;
         private System.Windows.Forms.Button logarithm;
@@ -1038,6 +877,7 @@ namespace Calculator
         private System.Windows.Forms.ToolStripMenuItem About;
         private System.Windows.Forms.Label lblShowOperation;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button pi_sym;
     }
 }
 
